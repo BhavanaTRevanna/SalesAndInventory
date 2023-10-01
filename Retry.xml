@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite" configfailurepolicy="skip">
+	<listeners><listener class-name="com.SalesAndInventory.genericUtils.IAnnTrans"></listener></listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.Homepage.SupplierRecordCountPOM"/>
+      <class name="com.Employee.Create_EmployeePOM"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="4" failed="2" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[supplierRecordCountPOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[supplierRecordCountPOM--> Skipped]]>
+    </line>
+    <line>
+      <![CDATA[createProductPOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[createProductPOM---> Testscript executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[placingOrderByCreatingCusPOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[placingOrderByCreatingCusPOM---> Testscript executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[editInventoryPOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[editInventoryPOM---> Testscript executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[pOS_PagePOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[pOS_PagePOM--->Failed]]>
+    </line>
+    <line>
+      <![CDATA[placingOrderForMultipleProductsPOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[placingOrderForMultipleProductsPOM---> Testscript executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[create_EmployeePOM--->ExecutionStarts]]>
+    </line>
+    <line>
+      <![CDATA[create_EmployeePOM--->Failed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-09-21T13:33:37 IST" name="Suite" finished-at="2023-09-21T13:34:26 IST" duration-ms="48963">
+    <groups>
+      <group name="Regression">
+        <method signature="EditInventoryPOM.editInventoryPOM()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" name="editInventoryPOM" class="com.Inventory.EditInventoryPOM"/>
+        <method signature="POS_PagePOM.pOS_PagePOM()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" name="pOS_PagePOM" class="com.POS.POS_PagePOM"/>
+        <method signature="PlacingOrderByCreatingCusPOM.placingOrderByCreatingCusPOM()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" name="placingOrderByCreatingCusPOM" class="com.POS.PlacingOrderByCreatingCusPOM"/>
+        <method signature="PlacingOrderForMultipleProductsPOM.placingOrderForMultipleProductsPOM()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" name="placingOrderForMultipleProductsPOM" class="com.POS.PlacingOrderForMultipleProductsPOM"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="CreateProductPOM.createProductPOM()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" name="createProductPOM" class="com.Product.CreateProductPOM"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-09-21T13:33:37 IST" name="Test" finished-at="2023-09-21T13:34:26 IST" duration-ms="48963">
+      <class name="com.POS.POS_PagePOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" started-at="2023-09-21T13:34:12 IST" name="confgBC" finished-at="2023-09-21T13:34:13 IST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" started-at="2023-09-21T13:34:13 IST" name="confgBM" finished-at="2023-09-21T13:34:14 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="pOS_PagePOM()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" started-at="2023-09-21T13:34:14 IST" name="pOS_PagePOM" finished-at="2023-09-21T13:34:16 IST" duration-ms="1871" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.POS.POS_PagePOM.pOS_PagePOM(POS_PagePOM.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[pOS_PagePOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[pOS_PagePOM--->Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- pOS_PagePOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" started-at="2023-09-21T13:34:16 IST" name="confgAM" finished-at="2023-09-21T13:34:16 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.POS.POS_PagePOM@fa4c865]" started-at="2023-09-21T13:34:16 IST" name="confgAC" finished-at="2023-09-21T13:34:17 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.POS.POS_PagePOM -->
+      <class name="com.POS.PlacingOrderForMultipleProductsPOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" started-at="2023-09-21T13:34:17 IST" name="confgBC" finished-at="2023-09-21T13:34:18 IST" duration-ms="1300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" started-at="2023-09-21T13:34:18 IST" name="confgBM" finished-at="2023-09-21T13:34:18 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="placingOrderForMultipleProductsPOM()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" started-at="2023-09-21T13:34:18 IST" name="placingOrderForMultipleProductsPOM" finished-at="2023-09-21T13:34:22 IST" duration-ms="3863" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[placingOrderForMultipleProductsPOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[placingOrderForMultipleProductsPOM---> Testscript executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- placingOrderForMultipleProductsPOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" started-at="2023-09-21T13:34:22 IST" name="confgAM" finished-at="2023-09-21T13:34:23 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.POS.PlacingOrderForMultipleProductsPOM@3bd82cf5]" started-at="2023-09-21T13:34:23 IST" name="confgAC" finished-at="2023-09-21T13:34:23 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.POS.PlacingOrderForMultipleProductsPOM -->
+      <class name="com.Inventory.EditInventoryPOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" started-at="2023-09-21T13:34:07 IST" name="confgBC" finished-at="2023-09-21T13:34:09 IST" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" started-at="2023-09-21T13:34:09 IST" name="confgBM" finished-at="2023-09-21T13:34:09 IST" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="editInventoryPOM()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" started-at="2023-09-21T13:34:09 IST" name="editInventoryPOM" finished-at="2023-09-21T13:34:11 IST" duration-ms="1754" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[editInventoryPOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[editInventoryPOM---> Testscript executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editInventoryPOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" started-at="2023-09-21T13:34:11 IST" name="confgAM" finished-at="2023-09-21T13:34:12 IST" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.Inventory.EditInventoryPOM@4c178a76]" started-at="2023-09-21T13:34:12 IST" name="confgAC" finished-at="2023-09-21T13:34:12 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.Inventory.EditInventoryPOM -->
+      <class name="com.POS.PlacingOrderByCreatingCusPOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" started-at="2023-09-21T13:34:01 IST" name="confgBC" finished-at="2023-09-21T13:34:02 IST" duration-ms="1355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" started-at="2023-09-21T13:34:02 IST" name="confgBM" finished-at="2023-09-21T13:34:03 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="placingOrderByCreatingCusPOM()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" started-at="2023-09-21T13:34:03 IST" name="placingOrderByCreatingCusPOM" finished-at="2023-09-21T13:34:07 IST" duration-ms="4012" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[placingOrderByCreatingCusPOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[placingOrderByCreatingCusPOM---> Testscript executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- placingOrderByCreatingCusPOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" started-at="2023-09-21T13:34:07 IST" name="confgAM" finished-at="2023-09-21T13:34:07 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.POS.PlacingOrderByCreatingCusPOM@b2c9a9c]" started-at="2023-09-21T13:34:07 IST" name="confgAC" finished-at="2023-09-21T13:34:07 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.POS.PlacingOrderByCreatingCusPOM -->
+      <class name="com.Product.CreateProductPOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" started-at="2023-09-21T13:33:54 IST" name="confgBC" finished-at="2023-09-21T13:33:56 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" started-at="2023-09-21T13:33:56 IST" name="confgBM" finished-at="2023-09-21T13:33:56 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="createProductPOM()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" started-at="2023-09-21T13:33:56 IST" name="createProductPOM" finished-at="2023-09-21T13:34:00 IST" duration-ms="3850" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createProductPOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[createProductPOM---> Testscript executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createProductPOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" started-at="2023-09-21T13:34:00 IST" name="confgAM" finished-at="2023-09-21T13:34:01 IST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.Product.CreateProductPOM@2362f559]" started-at="2023-09-21T13:34:01 IST" name="confgAC" finished-at="2023-09-21T13:34:01 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.Product.CreateProductPOM -->
+      <class name="com.Homepage.SupplierRecordCountPOM">
+        <test-method is-config="true" signature="confgBS()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:37 IST" name="confgBS" finished-at="2023-09-21T13:33:37 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBS -->
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:37 IST" name="confgBC" finished-at="2023-09-21T13:33:40 IST" duration-ms="2753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:40 IST" name="confgBM" finished-at="2023-09-21T13:33:43 IST" duration-ms="3237" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=116.0.5845.190)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30ccc7f3636d9510a4813124137f8b3a, get {url=http://rmgtestingserver/domain/Sales_And_Inventory_System/pages/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.190, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50690/devtoo..., se:cdpVersion: 116.0.5845.190, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30ccc7f3636d9510a4813124137f8b3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=116.0.5845.190)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30ccc7f3636d9510a4813124137f8b3a, get {url=http://rmgtestingserver/domain/Sales_And_Inventory_System/pages/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.190, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50690/devtoo..., se:cdpVersion: 116.0.5845.190, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30ccc7f3636d9510a4813124137f8b3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at com.SalesAndInventory.genericUtils.BaseClass.confgBM(BaseClass.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="supplierRecordCountPOM()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:43 IST" name="supplierRecordCountPOM" finished-at="2023-09-21T13:33:43 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=116.0.5845.190)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30ccc7f3636d9510a4813124137f8b3a, get {url=http://rmgtestingserver/domain/Sales_And_Inventory_System/pages/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.190, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50690/devtoo..., se:cdpVersion: 116.0.5845.190, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30ccc7f3636d9510a4813124137f8b3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=116.0.5845.190)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30ccc7f3636d9510a4813124137f8b3a, get {url=http://rmgtestingserver/domain/Sales_And_Inventory_System/pages/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.190, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50690/devtoo..., se:cdpVersion: 116.0.5845.190, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30ccc7f3636d9510a4813124137f8b3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at com.SalesAndInventory.genericUtils.BaseClass.confgBM(BaseClass.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[supplierRecordCountPOM--> Skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- supplierRecordCountPOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:43 IST" name="confgAM" finished-at="2023-09-21T13:33:54 IST" duration-ms="10549" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.id: userDropdown
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: userDropdown
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at com.Sales.ObjectRepo.HomePage.logout(HomePage.java:98)
+at com.SalesAndInventory.genericUtils.BaseClass.confgAM(BaseClass.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:33:54 IST" name="confgAC" finished-at="2023-09-21T13:33:54 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+        <test-method is-config="true" signature="confgAS()[pri:0, instance:com.Homepage.SupplierRecordCountPOM@2925bf5b]" started-at="2023-09-21T13:34:27 IST" name="confgAS" finished-at="2023-09-21T13:34:27 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAS -->
+      </class> <!-- com.Homepage.SupplierRecordCountPOM -->
+      <class name="com.Employee.Create_EmployeePOM">
+        <test-method is-config="true" signature="confgBC()[pri:0, instance:com.Employee.Create_EmployeePOM@544fa968]" started-at="2023-09-21T13:34:23 IST" name="confgBC" finished-at="2023-09-21T13:34:24 IST" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBC -->
+        <test-method is-config="true" signature="confgBM()[pri:0, instance:com.Employee.Create_EmployeePOM@544fa968]" started-at="2023-09-21T13:34:24 IST" name="confgBM" finished-at="2023-09-21T13:34:25 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgBM -->
+        <test-method signature="create_EmployeePOM()[pri:0, instance:com.Employee.Create_EmployeePOM@544fa968]" started-at="2023-09-21T13:34:25 IST" name="create_EmployeePOM" finished-at="2023-09-21T13:34:25 IST" duration-ms="390" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.Employee.Create_EmployeePOM.create_EmployeePOM(Create_EmployeePOM.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[create_EmployeePOM--->ExecutionStarts]]>
+            </line>
+            <line>
+              <![CDATA[create_EmployeePOM--->Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- create_EmployeePOM -->
+        <test-method is-config="true" signature="confgAM()[pri:0, instance:com.Employee.Create_EmployeePOM@544fa968]" started-at="2023-09-21T13:34:25 IST" name="confgAM" finished-at="2023-09-21T13:34:26 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAM -->
+        <test-method is-config="true" signature="confgAC()[pri:0, instance:com.Employee.Create_EmployeePOM@544fa968]" started-at="2023-09-21T13:34:26 IST" name="confgAC" finished-at="2023-09-21T13:34:26 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confgAC -->
+      </class> <!-- com.Employee.Create_EmployeePOM -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
