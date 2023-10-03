@@ -42,7 +42,7 @@ public class WebDriverUtility extends JavaUtility{
 	 * @param driver
 	 */
 	public void minimizeTheBrowser(WebDriver driver) {
-		driver.manage().window().minimize();;
+		driver.manage().window().minimize();
 	}
 	/**
 	 * this method will wait until elements in the page gets loaded
