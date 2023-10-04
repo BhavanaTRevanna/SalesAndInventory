@@ -35,7 +35,6 @@ public class Captcha {
 		String actualText=captchaText.toString().trim().replace(" ", "");
 		System.out.println(actualText);
 		
-
 	}
 
 }
